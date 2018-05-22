@@ -1,5 +1,6 @@
 package com.example.oluwadara.reddit;
 
+
 /*
  * Utility functions to handle Reddit JSON data
  */
@@ -33,7 +34,7 @@ public final class RedditJsonUtils {
 
         final String OWM_MESSAGE_CODE = "cod";
 
-        String[] parsedGameData = null;
+        String[] parsedGameData;
 
         JSONObject gameJson = new JSONObject(gameJsonStr);
 

@@ -1,7 +1,6 @@
 package com.example.oluwadara.reddit;
 
 import android.net.Uri;
-import android.util.Log;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -28,7 +27,6 @@ public final class QueryUtils {
         } catch (MalformedURLException e) {
             e.printStackTrace();
         }
-        Log.v(TAG, "Built URI " + url);
         return url;
     }
 

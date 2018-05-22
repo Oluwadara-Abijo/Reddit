@@ -11,17 +11,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ProgressBar;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import java.net.URL;
-import java.util.Arrays;
 
 public class MainActivity extends AppCompatActivity implements GameAdapter.GameAdapterOnClickHandler{
 
@@ -59,8 +56,8 @@ public class MainActivity extends AppCompatActivity implements GameAdapter.GameA
     }
 
     @Override
-    public void onClick(String gitData) {
-        String[] parts = gitData.split("-");
+    public void onClick(String gameData) {
+        String[] parts = gameData.split("-");
         String url = parts[3];
 
         try {
